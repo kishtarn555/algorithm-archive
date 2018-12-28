@@ -1,3 +1,5 @@
+//Code by Hector Fernando Ricardez Lara
+//Encuentra los componentes fuertemente conexos de un grafo dirigido
 #include<string.h>
 #include<stack>
 #include<vector>
@@ -14,7 +16,6 @@ int info[100005];
 stack<int> st;
 
 vector<int> adj[100005];
-set<int> adj2[100005];
 
 void dfs(int cur) {
     if (visited[cur])return;
